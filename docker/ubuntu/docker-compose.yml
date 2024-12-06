@@ -1,0 +1,17 @@
+version: '3'
+services:
+  cs415-ubuntu:
+    build: ./ubuntu
+    image: image_cs415_ubuntu
+    container_name: container_cs415_ubuntu
+    restart: always
+    stdin_open: true
+    tty: true
+    
+  cs415-homework:
+    build: ./homework
+    image: image_cs415_homework
+    container_name: container_cs415_homework
+    restart: always
+    stdin_open: true
+    tty: true
